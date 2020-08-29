@@ -3,18 +3,58 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="{% static 'website/main.css' %}">
+
     {% if title %}
-    <title>website - {{title}}</title>
+    <title>Colin J Miller - {{title}}</title>
     {% else %}
-    <title>website </title>
+    <title>Colin J Miller </title>
     {% endif %}
 </head>
 <body>
-    <h1>{% if title %}
-    {{title}}
-    {% else %}
-    website
-    {% endif %}
-    </h1>
+
+<!--    <header id="main-header">-->
+<!--        <div class="container">-->
+<!--            <h1>Colin J Miller</h1>-->
+<!--        </div>-->
+<!--    </header>-->
+    <nav id="navbar">
+        <div class="container">
+            <ul>
+                <li><a href="{% url 'website-home' %}">Home</a></li>
+                <li><a href="{% url 'website-resume' %}">Resume</a></li>
+                <li><a href="{% url 'website-contact' %}">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="showcase">
+        <div class="container">
+
+        </div>
+
+    </section>
+
+    <div class="container">
+
+
+        <section id="main">
+            <h1>Welcome</h1>
+            <h4>Colin J Miller</h4>
+            <p>I made this website to learn some basic web development. You can also check out my portfolio here <br><br> More text  </p>
+        </section>
+
+        <aside id="sidebar">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex
+                ea commodo consequat. Duis
+            </p>
+
+        </aside>
+    </div>
+    <footer id="main-footer">
+        <p>copyright &copy; 2020 Colin Miller</p>
+    </footer>
+
 </body>
 </html>

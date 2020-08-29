@@ -7,5 +7,9 @@ def home(request):
     return render(request, 'website/home.html', context={'title': 'Home'})
 
 
-def about(request):
-    return render(request, 'website/about.html', context={'title': 'About'})
+def resume(request):
+    return render(request, 'website/resume.html', context={'title': 'Resume'})
+
+
+def contact(request):
+    return render(request, 'website/contact.html', context={'title': 'Contact'})
