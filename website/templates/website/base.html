@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" type="text/css" href="{% static 'website/main.css' %}">
-
+    {% block links %}{% links %}
     {% if title %}
     <title>Colin J Miller - {{title}}</title>
     {% else %}
@@ -12,37 +12,19 @@
     {% endif %}
 </head>
 <body>
-
-<!--    <header id="main-header">-->
-<!--        <div class="container">-->
-<!--            <h1>Colin J Miller</h1>-->
-<!--        </div>-->
-<!--    </header>-->
     <nav id="navbar">
         <div class="container">
             <ul>
                 <li><a href="{% url 'website-home' %}">Home</a></li>
                 <li><a href="{% url 'website-resume' %}">Resume</a></li>
                 <li><a href="{% url 'website-contact' %}">Contact</a></li>
+                <li><a href="{% url 'website-calculator' %}">Calculator</a></li>
             </ul>
         </div>
     </nav>
 
-    <section id="showcase">
-        <div class="container">
-
-        </div>
-
-    </section>
-
     <div class="container">
-
-
-        <section id="main">
-            <h1>Welcome</h1>
-            <h4>Colin J Miller</h4>
-            <p>I made this website to learn some basic web development. You can also check out my portfolio here <br><br> More text  </p>
-        </section>
+        {% block content %}{% endblock %}
 
         <aside id="sidebar">
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et

@@ -13,3 +13,6 @@ def resume(request):
 
 def contact(request):
     return render(request, 'website/contact.html', context={'title': 'Contact'})
+
+def calculator(request):
+    return render(request, 'website/calculator.html', context={'title': 'Calculator'})
