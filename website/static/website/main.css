@@ -1,6 +1,9 @@
-html {
-    height: 100%;
+*, *::before, *::after {
+  box-sizing: border-box;
 }
+/* html{
+    height: 100%;
+} */
 
 body{
   /* background-color: #f4f4f4; */
@@ -9,9 +12,11 @@ body{
   color:#f2f2f2;
   font-family: Lato,sans-serif;
   font-size: 16px;
+  font-weight: normal;
   line-height: 1.6em;
   height: 100%;
   margin:0;
+  padding: 0;
   &/* background-repeat: no-repeat;
   background-attachment: fixed; */
 }

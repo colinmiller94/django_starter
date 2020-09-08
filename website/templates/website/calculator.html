@@ -1,12 +1,14 @@
 {% extends "website/base.html" %}
+{% load static %}
 {% block content %}
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
-    <link rel="stylesheet" type="text/css" href="{% static 'website/calculator_styles.css' %}">
+
     {% block links %}
+    <link rel="stylesheet" type="text/css" href="{% static 'website/calculator_styles.css' %}">
     <script src="{% static 'website/script.js' %}" defer></script>
     {% endblock links %}
   </head>
