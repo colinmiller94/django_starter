@@ -25,7 +25,9 @@ SECRET_KEY = 'gcr-zimb&apz2kv@)wt9pb7td0iyf2g)xxlgedgoc1)bq^+))b'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['django-env.eba-wqg6fdjf.us-west-2.elasticbeanstalk.com',
+                 'localhost']
+SITE_URL = "http://127.0.0.1:8000"
 
 
 # Application definition
